@@ -1,6 +1,6 @@
 package uaslp.objetos.figuras;
 
-public class Triangulo {
+public class Triangulo implements Figura{
     private double base;
     private double altura;
     private double area;
@@ -47,4 +47,8 @@ public class Triangulo {
         return "Cualquier triangulo";
     }
 
+    @Override
+    public String getName() {
+        return "Triangulo";
+    }
 }
